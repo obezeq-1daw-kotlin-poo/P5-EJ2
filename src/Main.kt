@@ -1,3 +1,15 @@
+fun Double.redondear(posicionesDecimalesRedondear: Int): Double {
+    var multiplicador = 1.0
+
+    for (i in 1..posicionesDecimalesRedondear) {
+        multiplicador *= 10
+    }
+
+    val redondeado = Math.round(this * multiplicador)
+
+    return redondeado / multiplicador
+}
+
 
 fun main() {
 
@@ -16,3 +28,4 @@ fun main() {
     println("El salario total a pagar al mes es: %.2f".format(departamento.calculaSalarioTotal()))
 
 }
+
