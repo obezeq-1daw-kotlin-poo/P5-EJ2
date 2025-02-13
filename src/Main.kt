@@ -1,11 +1,4 @@
 
-
-
-
-
-
-
-
 fun main() {
 
     val departamento = Departamento()
